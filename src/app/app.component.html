@@ -22,10 +22,19 @@
   </select> 
   <div> RETURN DETAIL OF CONDITION SPECIFIC TO THAT TREE + OPTION. i.e : scorch -> show pics of that tree scorching and ask to confirm; if expand base ground area, confirm/deny if there has been a request there.</div>
 
-  <h2>3. Verify where you are/ what tree you are seeing</h2>
-  <label> ENTER ADDRESS</label>
-  <input />  
-  <div> RETURN TREE / LOCATION HERE</div>
+  <h2>3. ...</h2>
+ 
+  <div *ngFor="let obj of twd">One obect:
+
+    <p>{{obj}}</p>
+    <!-- <p *ngFor="let ks of obj">{{ks}}</p> -->
+    <!-- <div *ngFor="let item of obj | keyvalue">
+      <p>{{item.key}}</p>
+      <p>{{item.value}}</p>
+    </div> -->
+  </div>
+
+
 <!-- 
   <form>
     <label> WILL RECEIVE REPORTS HERE</label>
