@@ -7,8 +7,11 @@
 <!-- Main -->
 <main>
   <h2>1. Verify where you are/ what tree you are seeing</h2>
-  <label> ENTER ADDRESS</label>
-  <input />  
+  <label> ENTER ZIPCODE</label>
+  <form action="">
+    <input type="text" placeholder="Enter Current Zipcode" id="zip" [(ngModel)]="zip" />  
+    <p for="zip">{{zip}}</p>
+  </form>
   <div> RETURN TREE / LOCATION HERE</div>
   
   <h2>2. Verify where you are/what tree you are seeing</h2>
@@ -24,15 +27,29 @@
 
   <h2>3. ...</h2>
  
-  <div *ngFor="let obj of twd">One obect:
+  <!-- <p>{{twd}}</p> -->
 
-    <p>{{obj}}</p>
-    <!-- <p *ngFor="let ks of obj">{{ks}}</p> -->
-    <!-- <div *ngFor="let item of obj | keyvalue">
-      <p>{{item.key}}</p>
-      <p>{{item.value}}</p>
-    </div> -->
+  <div *ngFor="let objs of twd">
+    <h2>Work order address:</h2>
+    <!-- <p>{{objs.objectid}}</p> -->
+    <p>{{objs.buildingnumber}} {{objs.streetname}}</p>
+    <p></p>
+    <p>{{objs.nta}} {{objs.zipcode}}</p>
   </div>
+
+
+    <!-- <p>{{objs}}</p> -->
+    <!-- <div *ngFor="let item of twd | keyvalue "> -->
+    <!-- 
+    <div *ngFor="let v of item | keyvalue ">One service entry: -->
+
+    <!-- <p>{{gid}}</p> -->
+    <!-- <p *ngFor="let val of obj.value">{{val}}</p> -->
+    <!-- <p *ngFor="let ks of obj">{{ksxp> -->
+    <!-- <div *ngFor="let item of obj | keyvalue">-->
+      <!-- <p>{{item.key}}</p>
+      <p>{{item.value}}</p> -->
+    <!-- </div>  -->
 
 
 <!-- 
