@@ -1,1 +1,9 @@
-<p>service-orders works!</p>
+
+<p>{{this.Zip}}</p>
+  <div *ngFor="let objs of twd">
+    <h2>Work order address:</h2>
+    <!-- <p>{{objs.objectid}}</p> -->
+    <p>{{objs.buildingnumber}} {{objs.streetname}}</p>
+    <p>{{objs.nta}} {{objs.zipcode}}</p>
+  </div>
+
